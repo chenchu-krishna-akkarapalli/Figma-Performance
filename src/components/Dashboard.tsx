@@ -22,6 +22,8 @@ import { WelcomeBanner } from "./WelcomeBanner";
 import { ProfileSection } from "./ProfileSection";
 import { SkillSetSection } from "./SkillSetSection";
 import { PerformersTable } from "./PerformersTable";
+import { EmployeeProfile } from "./EmployeeProfile";
+import { useState } from "react";
 
 // Chart Data
 const salesData = [
@@ -190,6 +192,20 @@ const performersData = [
 ];
 
 export function Dashboard() {
+  const [openProfile, setOpenProfile] = useState(false);
+
+  const profileData = {
+    name: "Raheem",
+    jobDescription: "Senior Sales Executive",
+    department: "Sales",
+    manager: "Mohamed Ali",
+    experience: "5 Years",
+    primarySkills: ["Sales Strategy", "Client Handling", "Negotiation"],
+    secondarySkills: ["Excel", "Presentation", "Team Support"],
+    pastProjects: ["Q1 Sales Campaign", "Product Launch 2023", "Lead Conversion Automation"],
+    currentProjects: ["CRM Optimization Project", "Monthly KPI Boost Campaign"]
+  };
+
   return (
     <div
       className="h-screen flex flex-col items-center overflow-hidden"
@@ -419,9 +435,19 @@ export function Dashboard() {
           </div>
 
           {/* Performers Table */}
-          <PerformersTable data={performersData} />
+          <PerformersTable 
+            data={performersData}
+            onProfileClick={() => setOpenProfile(true)}
+          />
         </div>
       </div>
+
+      {/* Employee Profile Modal */}
+      <EmployeeProfile
+        open={openProfile}
+        onClose={() => setOpenProfile(false)}
+        employee={profileData}
+      />
     </div>
   );
 }

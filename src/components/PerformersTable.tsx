@@ -15,9 +15,10 @@ interface Performer {
 
 interface PerformersTableProps {
   data: Performer[];
+  onProfileClick?: () => void;
 }
 
-export function PerformersTable({ data }: PerformersTableProps) {
+export function PerformersTable({ data, onProfileClick }: PerformersTableProps) {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -198,9 +199,10 @@ export function PerformersTable({ data }: PerformersTableProps) {
             {data.map((performer, idx) => (
               <tr
                 key={performer.id}
+                onClick={onProfileClick}
                 className={`border-b border-gray-200 h-[44px] ${
                   idx % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]"
-                } hover:bg-gray-100 transition`}
+                } hover:bg-gray-100 transition cursor-pointer`}
               >
                 <td className="py-2 px-3 text-black font-semibold text-[12px] w-[50px] flex items-center justify-center">
                   <img
