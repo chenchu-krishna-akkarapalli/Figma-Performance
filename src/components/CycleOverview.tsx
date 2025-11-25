@@ -35,7 +35,7 @@ export function CycleOverview({
   return (
     <div className="space-y-3">
       {/* Cycle Header */}
-      <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-3 border border-purple-200">
+      <div className="bg-linear-to-r from-purple-50 to-blue-50 rounded-lg p-3 border border-purple-200">
         <div className="flex items-start justify-between mb-2">
           <div>
             <h3 className="text-sm font-bold text-gray-900">{cycleName}</h3>
@@ -69,7 +69,7 @@ export function CycleOverview({
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all"
+              className="bg-linear-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all"
               style={{ width: `${completionRate}%` }}
             ></div>
           </div>

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* CSS Variables for responsive design */
+/* CSS Variables for responsive design - Fixed 1398px width */
 :root {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -8,14 +8,15 @@
 
   color-scheme: light;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #cccccc;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Responsive scaling */
+  /* Fixed width for consistent alignment */
+  --container-width: 1398px;
   --scale: 1;
   --base-padding: 22px;
   --gap-small: 10px;
@@ -30,6 +31,7 @@
   :root {
     --scale: 1.35;
     --base-padding: 30px;
+    --container-width: 1398px;
   }
 }
 
@@ -38,6 +40,7 @@
   :root {
     --scale: 1;
     --base-padding: 22px;
+    --container-width: 1398px;
   }
 }
 
@@ -46,6 +49,7 @@
   :root {
     --scale: 0.8;
     --base-padding: 16px;
+    --container-width: 1100px;
   }
 }
 
@@ -54,6 +58,7 @@
   :root {
     --scale: 0.65;
     --base-padding: 12px;
+    --container-width: 900px;
   }
 }
 
@@ -62,6 +67,7 @@
   :root {
     --scale: 0.5;
     --base-padding: 8px;
+    --container-width: 100%;
   }
 }
 
@@ -76,10 +82,13 @@ body {
   min-height: 100vh;
   width: 100%;
   height: 100%;
-  background-color: #cccccc;
+  background-color: #EDEFF1 ;
   overflow-x: hidden;
   overflow-y: auto;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 *,
@@ -89,7 +98,8 @@ body {
 }
 
 #root {
-  width: 100%;
+  width: var(--container-width);
+  min-width: var(--container-width);
   min-height: 100vh;
   margin: 0;
   padding: 0;

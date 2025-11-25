@@ -17,7 +17,7 @@ interface GoalFormProps {
   onClose?: () => void;
 }
 
-export function GoalForm({ cycleId, cycleName, departments, onSubmit, onClose }: GoalFormProps) {
+export function GoalForm({ cycleName, departments, onSubmit, onClose }: GoalFormProps) {
   const [formData, setFormData] = useState<GoalFormData>({
     title: '',
     description: '',

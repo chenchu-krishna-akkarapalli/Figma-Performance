@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export function Layout({ user, onLogout }: LayoutProps) {
   return (
-    <div className="h-screen bg-[#EDEFF1] flex flex-col overflow-hidden">
+    <div className="h-screen flex flex-col overflow-hidden">
       {/* Navbar - renders in all routes */}
       <Navbar user={user} onLogout={onLogout} />
 

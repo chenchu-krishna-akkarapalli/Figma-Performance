@@ -22,7 +22,7 @@ export function Navbar({ user, onLogout }: NavbarProps) {
   
   // Determine active index based on current path
   const getActiveIndex = () => {
-    const index = navItems.findIndex(item => location.pathname === item.path);
+    const index = navItems.findIndex(item => location.pathname === item.path || location.pathname.startsWith(item.path + '/'));
     return index >= 0 ? index : 0;
   };
   

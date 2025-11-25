@@ -1,4 +1,4 @@
-import { CarbonSkillLevelIntermediate } from './Icons';
+import { FiBarChart2 } from 'react-icons/fi';
 
 interface Skill {
   label: string;
@@ -29,7 +29,7 @@ export function SkillSetSection({
           key={i}
           className={`h-[4px] rounded-[2px] flex-1 ${
             isFilled
-              ? 'bg-white'
+              ? 'bg-gradient-to-r from-[#AD46FF] to-[#E9D4FF]'
               : 'bg-[rgba(184,210,222,0.3)] border border-[#a2c4d4] border-solid opacity-50'
           }`}
           data-name={String(barNumber)}
@@ -56,7 +56,7 @@ export function SkillSetSection({
             className="flex items-center gap-[2px] relative mb-0"
             data-node-id="7:124"
           >
-            <CarbonSkillLevelIntermediate className="shrink-0 size-[12px]" />
+            <FiBarChart2 className="shrink-0 w-3 h-3" />
             <p
               className="font-['Arial_Rounded_MT_Bold:Regular',sans-serif] text-[10px] text-black font-bold leading-none"
               data-node-id="1:216"

@@ -14,7 +14,11 @@ const ChevronRightIcon = () => (
 // My Performance Breadcrumb Component
 export function MyPerformanceBreadcrumb() {
   return (
-    <div className="flex items-center gap-2 text-black text-xl font-bold" data-node-id="1:755">
+    <div 
+      className="flex items-center gap-2 text-black text-xl font-bold px-6" 
+      data-node-id="1:755"
+      style={{ width: 'var(--container-width)', maxWidth: '1398px', margin: '0 auto' }}
+    >
       <HomeIcon />
       <span>Dashboard</span>
       <ChevronRightIcon />

@@ -75,9 +75,15 @@ export function PerformanceHistChart() {
               fontSize: "11px",
             }}
           />
+          <defs>
+            <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#AD46FF" />
+              <stop offset="100%" stopColor="#E9D4FF" />
+            </linearGradient>
+          </defs>
           <Bar
             dataKey="achievement"
-            fill="#838383"
+            fill="url(#purpleGradient)"
             radius={[6, 6, 0, 0]}
             barSize={50}
           />

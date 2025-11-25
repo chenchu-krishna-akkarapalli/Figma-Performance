@@ -156,7 +156,7 @@ export function GoalOverview() {
             {/* Progress Bar */}
             <div className="w-full h-4 bg-[#e8e8e8] border border-black rounded-full overflow-hidden">
               <div 
-                className="h-full bg-gradient-to-r from-[#dcdcdc] to-[#767676] rounded-full transition-all duration-300"
+                className="h-full bg-gradient-to-r from-[#AD46FF] to-[#E9D4FF] rounded-full transition-all duration-300"
                 style={{ width: `${activeGoal.progress}%` }}
               ></div>
             </div>

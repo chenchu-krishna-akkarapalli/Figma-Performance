@@ -16,14 +16,11 @@ import {
 } from "recharts";
 import {
   UisCalender,
-  imgAntDesignDotChartOutlined,
-  imgAntDesignDotChartOutlined1,
 } from "./Icons";
-import { FiTarget, FiAlertCircle, FiCheckCircle } from "react-icons/fi";
+import { FiTarget, FiAlertCircle, FiCheckCircle, FiBarChart2 } from "react-icons/fi";
 import { WelcomeBanner } from "./WelcomeBanner";
 import { ProfileSection } from "./ProfileSection";
 import { SkillSetSection } from "./SkillSetSection";
-import { Breadcrumb } from "./Breadcrumb";
 import { PerformersTable } from "./PerformersTable";
 
 // Chart Data
@@ -195,7 +192,7 @@ const performersData = [
 export function Dashboard() {
   return (
     <div
-      className="h-screen bg-[#EDEFF1] flex flex-col items-center overflow-hidden"
+      className="h-screen flex flex-col items-center overflow-hidden"
       data-name="Dashboard"
       data-node-id="1:6"
     >
@@ -204,9 +201,6 @@ export function Dashboard() {
         className="dashboard-content relative flex-1 overflow-y-auto scrollbar-hide"
         style={{ width: "1419px" }}
       >
-        {/* Breadcrumb */}
-        <Breadcrumb items={[{ label: "Dashboard" }]} />
-
         {/* Welcome Section */}
         <WelcomeBanner />
 
@@ -227,21 +221,31 @@ export function Dashboard() {
             data-node-id="1:296"
           >
             <div className="flex items-center gap-2 mb-4">
-              <img
-                alt="Chart"
-                className="w-[16px] h-[16px]"
-                src={imgAntDesignDotChartOutlined1}
-              />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="iconGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
+                <FiBarChart2 width="16" height="16" stroke="url(#iconGrad1)" strokeWidth="2" />
+              </svg>
               <p className="text-black text-[14px] font-bold uppercase tracking-wider">
                 Project Performance
               </p>
-              <UisCalender className="ml-auto w-[24px] h-[24px]" />
+              <UisCalender className="ml-auto w-[24px] h-[24px] text-gradient" />
             </div>
             <ResponsiveContainer width="100%" height={320}>
               <LineChart
                 data={salesData}
                 margin={{ top: 5, right: 30, left: 0, bottom: 30 }}
               >
+                <defs>
+                  <linearGradient id="projectGradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#d9d9d9" />
                 <XAxis dataKey="month" fontSize={10} stroke="#7a7a7a" />
                 <YAxis fontSize={10} stroke="#7a7a7a" />
@@ -249,9 +253,9 @@ export function Dashboard() {
                 <Line
                   type="monotone"
                   dataKey="sales"
-                  stroke="#464646"
+                  stroke="url(#projectGradient)"
                   strokeWidth={2}
-                  dot={{ fill: "#464646", r: 4 }}
+                  dot={{ fill: "#AD46FF", r: 4 }}
                   activeDot={{ r: 6 }}
                 />
               </LineChart>
@@ -264,11 +268,15 @@ export function Dashboard() {
             data-node-id="1:65"
           >
             <div className="flex items-center gap-2 mb-4">
-              <img
-                alt="Chart"
-                className="w-[16px] h-[16px]"
-                src={imgAntDesignDotChartOutlined}
-              />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="iconGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
+                <FiBarChart2 width="16" height="16" stroke="url(#iconGrad2)" strokeWidth="2" />
+              </svg>
               <p className="text-black text-[14px] font-bold uppercase tracking-wider">
                 Department Performance
               </p>
@@ -278,14 +286,20 @@ export function Dashboard() {
                 data={departmentPerformanceData}
                 margin={{ top: 20, bottom: 20, left: 60, right: 60 }}
               >
+                <defs>
+                  <linearGradient id="deptGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
                 <PolarGrid stroke="#d1d5db" />
                 <PolarAngleAxis dataKey="department" fontSize={10} />
                 <PolarRadiusAxis angle={90} domain={[0, 100]} fontSize={10} />
                 <Radar
                   name="Performance"
                   dataKey="sales"
-                  stroke="#464646"
-                  fill="#a2c4d4"
+                  stroke="#AD46FF"
+                  fill="url(#deptGradient)"
                   fillOpacity={0.6}
                 />
               </RadarChart>
@@ -336,11 +350,15 @@ export function Dashboard() {
             data-node-id="1:244"
           >
             <div className="flex items-center gap-2 mb-4">
-              <img
-                alt="Chart"
-                className="w-[16px] h-[16px]"
-                src={imgAntDesignDotChartOutlined1}
-              />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="iconGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
+                <FiBarChart2 width="16" height="16" stroke="url(#iconGrad3)" strokeWidth="2" />
+              </svg>
               <p className="text-black text-[13px] font-bold uppercase tracking-wider">
                 Dept KPI Achievement
               </p>
@@ -352,6 +370,13 @@ export function Dashboard() {
                 data={departmentKPIData}
                 margin={{ top: 20, right: 50, left: 10, bottom: 60 }}
               >
+                <defs>
+                  <linearGradient id="deptKpiGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#AD46FF" />
+                    <stop offset="100%" stopColor="#E9D4FF" />
+                  </linearGradient>
+                </defs>
+
                 <CartesianGrid strokeDasharray="3 3" stroke="#d9d9d9" />
 
                 <XAxis
@@ -385,7 +410,7 @@ export function Dashboard() {
 
                 <Bar
                   dataKey="achievement"
-                  fill="#838383"
+                  fill="url(#deptKpiGradient)"
                   radius={[8, 8, 0, 0]}
                   barSize={38} // Increased bar width
                 />

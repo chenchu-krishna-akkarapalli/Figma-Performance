@@ -1,4 +1,4 @@
-import { imgAntDesignDotChartOutlined1, imgFrame48 } from "./Icons";
+import { imgFrame48 } from "./Icons";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
@@ -44,11 +44,16 @@ export function PerformersTable({ data }: PerformersTableProps) {
       {/* Header */}
       <div className="flex items-center justify-between mb-3 flex-shrink-0">
         <div className="flex items-center gap-2">
-          <img
-            alt="Chart"
-            className="w-[16px] h-[16px]"
-            src={imgAntDesignDotChartOutlined1}
-          />
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="performersGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#AD46FF" />
+                <stop offset="100%" stopColor="#E9D4FF" />
+              </linearGradient>
+            </defs>
+            <circle cx="12" cy="8" r="4" stroke="url(#performersGradient)" strokeWidth="2" fill="none" />
+            <path d="M 4 20 Q 4 14 12 14 Q 20 14 20 20" stroke="url(#performersGradient)" strokeWidth="2" fill="none" />
+          </svg>
           <p className="text-black text-[14px] font-bold uppercase tracking-wider">
             Performers
           </p>

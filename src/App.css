@@ -1,7 +1,7 @@
 /* Dashboard Container - Responsive Layout */
 .dashboard-container {
-  /* Base dimensions for desktop (1440px+) */
-  width: 100%;
+  /* Use CSS variable for fixed width */
+  width: var(--container-width);
   min-height: 100vh;
   background-color: #cccccc;
   position: relative;
@@ -16,12 +16,13 @@
   /* Responsive padding */
   padding: 0;
   gap: 0;
+  margin: 0 auto;
 }
 
 /* Desktop: 1920px and above - Full scale */
 @media (min-width: 1920px) {
   .dashboard-container {
-    width: 100%;
+    width: var(--container-width);
     min-height: 100vh;
   }
 }
@@ -29,7 +30,7 @@
 /* Large screens: 1440px to 1919px - Original design scale */
 @media (min-width: 1440px) and (max-width: 1919px) {
   .dashboard-container {
-    width: 100%;
+    width: var(--container-width);
     min-height: 100vh;
   }
 }
@@ -37,21 +38,21 @@
 /* Medium screens: 1024px to 1439px */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .dashboard-container {
-    width: 100%;
+    width: var(--container-width);
   }
 }
 
 /* Tablets: 768px to 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
   .dashboard-container {
-    width: 100%;
+    width: var(--container-width);
   }
 }
 
 /* Mobile: below 768px */
 @media (max-width: 767px) {
   .dashboard-container {
-    width: 100%;
+    width: var(--container-width);
   }
 }
 
