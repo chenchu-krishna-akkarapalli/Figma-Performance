@@ -26,9 +26,9 @@ export function Navbar() {
   return (
     <div className="sticky top-0 z-50 flex gap-[10px] items-center justify-between py-[10px] bg-inherit" style={{ width: '1419px' }} data-node-id="1:8">
       {/* Logo Section */}
-      <Link to="/dashboard" className="bg-[#cccccc] h-[55px] rounded-[30px] w-[214px] shadow-md flex items-center justify-center cursor-pointer" data-node-id="1:7">
-        <p className="text-black text-[20px] font-bold">Logo</p>
-      </Link>
+     
+        <img src='/profile-img/logo.svg' ></img>
+  
 
       {/* Navigation Container */}
       <div className="flex gap-[10px] items-center">
