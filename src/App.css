@@ -1,0 +1,72 @@
+/* Dashboard Container - Responsive Layout */
+.dashboard-container {
+  /* Base dimensions for desktop (1440px+) */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #cccccc;
+  position: relative;
+  overflow: visible;
+  transform-style: flat;
+  
+  /* Use CSS Grid for responsive layout */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  
+  /* Responsive padding */
+  padding: 0;
+  gap: 0;
+}
+
+/* Desktop: 1920px and above - Full scale */
+@media (min-width: 1920px) {
+  .dashboard-container {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+/* Large screens: 1440px to 1919px - Original design scale */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .dashboard-container {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+/* Medium screens: 1024px to 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .dashboard-container {
+    width: 100%;
+  }
+}
+
+/* Tablets: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .dashboard-container {
+    width: 100%;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+  .dashboard-container {
+    width: 100%;
+  }
+}
+
+/* Ensure proper text rendering */
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Disable text selection on interactive elements */
+button {
+  user-select: none;
+  cursor: pointer;
+}

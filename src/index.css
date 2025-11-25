@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/* CSS Variables for responsive design */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #cccccc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Responsive scaling */
+  --scale: 1;
+  --base-padding: 22px;
+  --gap-small: 10px;
+  --gap-medium: 20px;
+  --gap-large: 40px;
+  --border-radius: 42px;
+  --font-size-base: 16px;
+}
+
+/* Desktop: 1920px and above */
+@media (min-width: 1920px) {
+  :root {
+    --scale: 1.35;
+    --base-padding: 30px;
+  }
+}
+
+/* Large screens: 1440px to 1919px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  :root {
+    --scale: 1;
+    --base-padding: 22px;
+  }
+}
+
+/* Medium screens: 1024px to 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    --scale: 0.8;
+    --base-padding: 16px;
+  }
+}
+
+/* Tablets: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --scale: 0.65;
+    --base-padding: 12px;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+  :root {
+    --scale: 0.5;
+    --base-padding: 8px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #cccccc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient Border for Cards */
+.gradient-border {
+  background: white;
+  border-radius: 42px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #DBC8EA, #B992D8, #8C46BE, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Gradient Border for rounded cards (smaller radius) */
+.gradient-border-sm {
+  background: white;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #DBC8EA, #B992D8, #8C46BE, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Gradient Border for filter buttons (12px radius) */
+.gradient-border-xs {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #DBC8EA, #B992D8, #8C46BE, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Gradient Border for action buttons (30px radius) */
+.gradient-border-action {
+  background: #F5F5F5;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#F5F5F5, #F5F5F5), linear-gradient(135deg, #DBC8EA, #B992D8, #8C46BE, white);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+

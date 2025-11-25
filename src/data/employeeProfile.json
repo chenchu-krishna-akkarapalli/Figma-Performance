@@ -1,0 +1,837 @@
+{
+  "employees": [
+    {
+      "id": "IDRH001",
+      "rank": 1,
+      "name": "Raheem",
+      "role": "HR Manager",
+      "department": "HR",
+      "avatar": "/profile-img/profile.jpg",
+      "dateOfJoining": "21/04/2008",
+      "salary": 5000,
+      "contact": "+966878292920",
+      "email": "Raheem@company.com",
+      "kpiAchievement": 98,
+      "lmsCompletion": 82,
+      "alertsIssues": "none",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 45 },
+        { "quarter": "Q2", "achievement": 90 },
+        { "quarter": "Q3", "achievement": 62 },
+        { "quarter": "Q4", "achievement": 112 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Enhance Team Collaboration",
+          "description": "Encourage cross-functional teamwork through regular check-ins, joint problem-solving sessions, and shared project tracking",
+          "metrics": [
+            "Minimum 4 team check-ins per quarter",
+            "At least 2 cross-department projects completed",
+            "80% positive feedback in collaboration surveys"
+          ],
+          "progress": 80,
+          "expanded": true
+        },
+        { "id": "002", "title": "Compliance Training Completion", "progress": 65, "expanded": false },
+        { "id": "003", "title": "Customer Service Quality Improvement", "progress": 45, "expanded": false },
+        { "id": "004", "title": "Digital Transformation Project", "progress": 30, "expanded": false },
+        { "id": "005", "title": "Quarterly Budget Optimization", "progress": 55, "expanded": false }
+      ],
+      "threads": [
+        { "role": "HR thread:", "message": "Great work on Goal 001", "timestamp": "2025-11-20T10:30:00Z" },
+        { "role": "Manager thread:", "message": "Great work on Goal 001..!", "timestamp": "2025-11-21T14:15:00Z" },
+        { "role": "Employee thread:", "message": "Great work on Goal 001", "timestamp": "2025-11-22T09:45:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH002",
+      "rank": 2,
+      "name": "Sarah",
+      "role": "Senior Developer",
+      "department": "IT",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall (1).jpg",
+      "dateOfJoining": "15/06/2015",
+      "salary": 6500,
+      "contact": "+966878292921",
+      "email": "Sarah@company.com",
+      "kpiAchievement": 95,
+      "lmsCompletion": 90,
+      "alertsIssues": "none",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 85 },
+        { "quarter": "Q2", "achievement": 92 },
+        { "quarter": "Q3", "achievement": 88 },
+        { "quarter": "Q4", "achievement": 95 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Code Quality Improvement",
+          "description": "Implement best practices for code reviews and automated testing to improve overall code quality",
+          "metrics": [
+            "100% code review coverage",
+            "90% test coverage on new features",
+            "Reduce bug rate by 30%"
+          ],
+          "progress": 85,
+          "expanded": true
+        },
+        { "id": "002", "title": "Technical Documentation", "progress": 70, "expanded": false },
+        { "id": "003", "title": "Mentor Junior Developers", "progress": 60, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Tech Lead thread:", "message": "Excellent code quality improvements", "timestamp": "2025-11-19T11:30:00Z" },
+        { "role": "Manager thread:", "message": "Keep up the great work!", "timestamp": "2025-11-20T16:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH003",
+      "rank": 3,
+      "name": "Ahmed",
+      "role": "Sales Executive",
+      "department": "Sales",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall.jpg",
+      "dateOfJoining": "03/09/2018",
+      "salary": 4500,
+      "contact": "+966878292922",
+      "email": "Ahmed@company.com",
+      "kpiAchievement": 92,
+      "lmsCompletion": 78,
+      "alertsIssues": "pending",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 70 },
+        { "quarter": "Q2", "achievement": 85 },
+        { "quarter": "Q3", "achievement": 92 },
+        { "quarter": "Q4", "achievement": 98 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Increase Sales Revenue",
+          "description": "Achieve quarterly sales targets and expand client base through strategic outreach",
+          "metrics": [
+            "Meet 100% of quarterly sales quota",
+            "Acquire 10 new clients per quarter",
+            "Maintain 95% client retention rate"
+          ],
+          "progress": 75,
+          "expanded": true
+        },
+        { "id": "002", "title": "Client Relationship Management", "progress": 80, "expanded": false },
+        { "id": "003", "title": "Sales Training Completion", "progress": 90, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Sales Manager thread:", "message": "Great Q3 performance!", "timestamp": "2025-11-18T09:00:00Z" },
+        { "role": "HR thread:", "message": "Complete pending training", "timestamp": "2025-11-21T10:30:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH004",
+      "rank": 4,
+      "name": "Fatima",
+      "role": "Marketing Specialist",
+      "department": "Marketing",
+      "avatar": "/profile-img/arabic-man-traditional-wear-smiling-confident-showing-victory-sign-standing-white-wall.jpg",
+      "dateOfJoining": "12/01/2020",
+      "salary": 4000,
+      "contact": "+966878292923",
+      "email": "Fatima@company.com",
+      "kpiAchievement": 88,
+      "lmsCompletion": 95,
+      "alertsIssues": "none",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 78 },
+        { "quarter": "Q2", "achievement": 82 },
+        { "quarter": "Q3", "achievement": 88 },
+        { "quarter": "Q4", "achievement": 90 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Brand Awareness Campaign",
+          "description": "Launch and manage social media campaigns to increase brand visibility",
+          "metrics": [
+            "Increase social media followers by 25%",
+            "Achieve 10% engagement rate",
+            "Generate 500 leads per month"
+          ],
+          "progress": 70,
+          "expanded": true
+        },
+        { "id": "002", "title": "Content Strategy Development", "progress": 85, "expanded": false },
+        { "id": "003", "title": "Market Research Analysis", "progress": 60, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Marketing Lead thread:", "message": "Great campaign results!", "timestamp": "2025-11-20T14:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH005",
+      "rank": 5,
+      "name": "Omar",
+      "role": "Finance Analyst",
+      "department": "Finance",
+      "avatar": "/profile-img/medium-shot-islamic-man-market.jpg",
+      "dateOfJoining": "28/03/2017",
+      "salary": 5500,
+      "contact": "+966878292924",
+      "email": "Omar@company.com",
+      "kpiAchievement": 85,
+      "lmsCompletion": 88,
+      "alertsIssues": "none",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 75 },
+        { "quarter": "Q2", "achievement": 80 },
+        { "quarter": "Q3", "achievement": 85 },
+        { "quarter": "Q4", "achievement": 88 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Financial Reporting Accuracy",
+          "description": "Ensure all financial reports are accurate and delivered on time",
+          "metrics": [
+            "100% accuracy in quarterly reports",
+            "On-time delivery of all reports",
+            "Zero audit findings"
+          ],
+          "progress": 90,
+          "expanded": true
+        },
+        { "id": "002", "title": "Budget Analysis Optimization", "progress": 75, "expanded": false },
+        { "id": "003", "title": "Cost Reduction Initiatives", "progress": 65, "expanded": false }
+      ],
+      "threads": [
+        { "role": "CFO thread:", "message": "Excellent reporting accuracy", "timestamp": "2025-11-19T16:30:00Z" },
+        { "role": "Manager thread:", "message": "Good work on Q3 analysis", "timestamp": "2025-11-22T11:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH006",
+      "rank": 6,
+      "name": "Layla",
+      "role": "UX Designer",
+      "department": "Design",
+      "avatar": "/profile-img/muslim-man-front-golden-wall.jpg",
+      "dateOfJoining": "05/07/2019",
+      "salary": 4800,
+      "contact": "+966878292925",
+      "email": "Layla@company.com",
+      "kpiAchievement": 82,
+      "lmsCompletion": 92,
+      "alertsIssues": "review",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 72 },
+        { "quarter": "Q2", "achievement": 78 },
+        { "quarter": "Q3", "achievement": 82 },
+        { "quarter": "Q4", "achievement": 85 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "User Experience Enhancement",
+          "description": "Improve user satisfaction through intuitive design and user testing",
+          "metrics": [
+            "Increase user satisfaction score by 20%",
+            "Conduct 5 user testing sessions per quarter",
+            "Reduce user complaints by 30%"
+          ],
+          "progress": 65,
+          "expanded": true
+        },
+        { "id": "002", "title": "Design System Implementation", "progress": 80, "expanded": false },
+        { "id": "003", "title": "Accessibility Compliance", "progress": 55, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Design Lead thread:", "message": "Review pending designs", "timestamp": "2025-11-21T13:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH007",
+      "rank": 7,
+      "name": "Khalid",
+      "role": "Operations Manager",
+      "department": "Operations",
+      "avatar": "/profile-img/people-celebrating-ramadan-together.jpg",
+      "dateOfJoining": "10/11/2012",
+      "salary": 7000,
+      "contact": "+966878292926",
+      "email": "Khalid@company.com",
+      "kpiAchievement": 78,
+      "lmsCompletion": 70,
+      "alertsIssues": "urgent",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 65 },
+        { "quarter": "Q2", "achievement": 70 },
+        { "quarter": "Q3", "achievement": 75 },
+        { "quarter": "Q4", "achievement": 78 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Process Optimization",
+          "description": "Streamline operational processes to improve efficiency and reduce costs",
+          "metrics": [
+            "Reduce processing time by 15%",
+            "Cut operational costs by 10%",
+            "Achieve 98% on-time delivery"
+          ],
+          "progress": 55,
+          "expanded": true
+        },
+        { "id": "002", "title": "Team Performance Improvement", "progress": 60, "expanded": false },
+        { "id": "003", "title": "Safety Compliance", "progress": 85, "expanded": false }
+      ],
+      "threads": [
+        { "role": "CEO thread:", "message": "Address urgent operational issues", "timestamp": "2025-11-22T08:00:00Z" },
+        { "role": "HR thread:", "message": "Complete pending LMS courses", "timestamp": "2025-11-22T10:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH008",
+      "rank": 8,
+      "name": "Noor",
+      "role": "Customer Support Lead",
+      "department": "Support",
+      "avatar": "/profile-img/portrait-man-wearing-lavender-colored-fashion-garments-color-year.jpg",
+      "dateOfJoining": "22/02/2021",
+      "salary": 3800,
+      "contact": "+966878292927",
+      "email": "Noor@company.com",
+      "kpiAchievement": 75,
+      "lmsCompletion": 85,
+      "alertsIssues": "none",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 68 },
+        { "quarter": "Q2", "achievement": 72 },
+        { "quarter": "Q3", "achievement": 75 },
+        { "quarter": "Q4", "achievement": 78 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Customer Satisfaction Improvement",
+          "description": "Enhance customer support quality and response times",
+          "metrics": [
+            "Achieve 95% customer satisfaction rating",
+            "Reduce average response time to under 2 hours",
+            "Resolve 90% of tickets on first contact"
+          ],
+          "progress": 72,
+          "expanded": true
+        },
+        { "id": "002", "title": "Support Team Training", "progress": 80, "expanded": false },
+        { "id": "003", "title": "Knowledge Base Development", "progress": 65, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Support Manager thread:", "message": "Good improvement in response times", "timestamp": "2025-11-20T15:30:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH009",
+      "rank": 9,
+      "name": "Yusuf",
+      "role": "Data Analyst",
+      "department": "Analytics",
+      "avatar": "/profile-img/portrait-muslim-man.jpg",
+      "dateOfJoining": "18/08/2022",
+      "salary": 4200,
+      "contact": "+966878292928",
+      "email": "Yusuf@company.com",
+      "kpiAchievement": 70,
+      "lmsCompletion": 75,
+      "alertsIssues": "pending",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 55 },
+        { "quarter": "Q2", "achievement": 62 },
+        { "quarter": "Q3", "achievement": 68 },
+        { "quarter": "Q4", "achievement": 70 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Data Quality Assurance",
+          "description": "Implement data validation processes to ensure accuracy of analytics",
+          "metrics": [
+            "99% data accuracy rate",
+            "Automated data validation for all reports",
+            "Reduce data discrepancies by 50%"
+          ],
+          "progress": 50,
+          "expanded": true
+        },
+        { "id": "002", "title": "Dashboard Development", "progress": 65, "expanded": false },
+        { "id": "003", "title": "Predictive Analytics Implementation", "progress": 40, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Analytics Lead thread:", "message": "Complete pending data validation", "timestamp": "2025-11-21T09:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH010",
+      "rank": 10,
+      "name": "Aisha",
+      "role": "Legal Counsel",
+      "department": "Legal",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-making-meditation-gesture-with-fingers-standing-orange-wall.jpg",
+      "dateOfJoining": "30/04/2016",
+      "salary": 8000,
+      "contact": "+966878292929",
+      "email": "Aisha@company.com",
+      "kpiAchievement": 65,
+      "lmsCompletion": 60,
+      "alertsIssues": "urgent",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 50 },
+        { "quarter": "Q2", "achievement": 55 },
+        { "quarter": "Q3", "achievement": 60 },
+        { "quarter": "Q4", "achievement": 65 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Contract Review Efficiency",
+          "description": "Improve contract review turnaround time while maintaining quality",
+          "metrics": [
+            "Review all contracts within 48 hours",
+            "Zero legal compliance issues",
+            "95% contract accuracy rate"
+          ],
+          "progress": 45,
+          "expanded": true
+        },
+        { "id": "002", "title": "Regulatory Compliance Updates", "progress": 55, "expanded": false },
+        { "id": "003", "title": "Legal Training for Staff", "progress": 35, "expanded": false }
+      ],
+      "threads": [
+        { "role": "CEO thread:", "message": "Urgent: Review pending contracts", "timestamp": "2025-11-22T07:00:00Z" },
+        { "role": "HR thread:", "message": "Complete compliance training", "timestamp": "2025-11-22T09:30:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH011",
+      "rank": 11,
+      "name": "Zainab",
+      "role": "Project Manager",
+      "department": "PMO",
+      "avatar": "/profile-img/profile.jpg",
+      "dateOfJoining": "14/05/2019",
+      "salary": 6200,
+      "contact": "+966878292930",
+      "email": "Zainab@company.com",
+      "kpiAchievement": 91,
+      "lmsCompletion": 88,
+      "alertsIssues": "none",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 82 },
+        { "quarter": "Q2", "achievement": 87 },
+        { "quarter": "Q3", "achievement": 91 },
+        { "quarter": "Q4", "achievement": 94 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Project Delivery Excellence",
+          "description": "Ensure all projects are delivered on time and within budget with high quality standards",
+          "metrics": [
+            "95% on-time project delivery",
+            "Within 5% budget variance",
+            "90% stakeholder satisfaction"
+          ],
+          "progress": 88,
+          "expanded": true
+        },
+        { "id": "002", "title": "Team Capacity Planning", "progress": 75, "expanded": false },
+        { "id": "003", "title": "Risk Management Framework", "progress": 82, "expanded": false }
+      ],
+      "threads": [
+        { "role": "PMO Director thread:", "message": "Excellent project delivery record", "timestamp": "2025-11-19T10:00:00Z" },
+        { "role": "Stakeholder thread:", "message": "Great communication throughout", "timestamp": "2025-11-21T15:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH012",
+      "rank": 12,
+      "name": "Hassan",
+      "role": "Security Analyst",
+      "department": "IT Security",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall (1).jpg",
+      "dateOfJoining": "08/09/2020",
+      "salary": 5800,
+      "contact": "+966878292931",
+      "email": "Hassan@company.com",
+      "kpiAchievement": 87,
+      "lmsCompletion": 95,
+      "alertsIssues": "none",
+      "status": "Top",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 80 },
+        { "quarter": "Q2", "achievement": 84 },
+        { "quarter": "Q3", "achievement": 87 },
+        { "quarter": "Q4", "achievement": 90 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Security Incident Response",
+          "description": "Improve incident detection and response capabilities across the organization",
+          "metrics": [
+            "Reduce incident response time by 40%",
+            "Zero critical security breaches",
+            "100% compliance with security protocols"
+          ],
+          "progress": 78,
+          "expanded": true
+        },
+        { "id": "002", "title": "Security Awareness Training", "progress": 90, "expanded": false },
+        { "id": "003", "title": "Vulnerability Assessment", "progress": 85, "expanded": false }
+      ],
+      "threads": [
+        { "role": "CISO thread:", "message": "Great security posture improvements", "timestamp": "2025-11-20T09:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH013",
+      "rank": 13,
+      "name": "Mariam",
+      "role": "Quality Assurance Lead",
+      "department": "QA",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall.jpg",
+      "dateOfJoining": "22/03/2018",
+      "salary": 5200,
+      "contact": "+966878292932",
+      "email": "Mariam@company.com",
+      "kpiAchievement": 84,
+      "lmsCompletion": 80,
+      "alertsIssues": "pending",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 76 },
+        { "quarter": "Q2", "achievement": 80 },
+        { "quarter": "Q3", "achievement": 84 },
+        { "quarter": "Q4", "achievement": 86 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Test Automation Coverage",
+          "description": "Increase automated test coverage to reduce manual testing effort and improve reliability",
+          "metrics": [
+            "Achieve 80% automation coverage",
+            "Reduce regression testing time by 50%",
+            "Zero critical defects in production"
+          ],
+          "progress": 72,
+          "expanded": true
+        },
+        { "id": "002", "title": "QA Process Standardization", "progress": 85, "expanded": false },
+        { "id": "003", "title": "Performance Testing Framework", "progress": 60, "expanded": false }
+      ],
+      "threads": [
+        { "role": "QA Manager thread:", "message": "Complete pending test automation", "timestamp": "2025-11-21T11:00:00Z" },
+        { "role": "Dev Lead thread:", "message": "Great collaboration on testing", "timestamp": "2025-11-22T14:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH014",
+      "rank": 14,
+      "name": "Tariq",
+      "role": "Business Analyst",
+      "department": "Business",
+      "avatar": "/profile-img/arabic-man-traditional-wear-smiling-confident-showing-victory-sign-standing-white-wall.jpg",
+      "dateOfJoining": "17/11/2021",
+      "salary": 4600,
+      "contact": "+966878292933",
+      "email": "Tariq@company.com",
+      "kpiAchievement": 79,
+      "lmsCompletion": 82,
+      "alertsIssues": "none",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 70 },
+        { "quarter": "Q2", "achievement": 74 },
+        { "quarter": "Q3", "achievement": 79 },
+        { "quarter": "Q4", "achievement": 82 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Requirements Documentation",
+          "description": "Improve requirements gathering and documentation processes for better project outcomes",
+          "metrics": [
+            "100% requirements traceability",
+            "Reduce requirement changes by 30%",
+            "95% stakeholder sign-off rate"
+          ],
+          "progress": 68,
+          "expanded": true
+        },
+        { "id": "002", "title": "Process Mapping", "progress": 75, "expanded": false },
+        { "id": "003", "title": "Business Case Development", "progress": 70, "expanded": false }
+      ],
+      "threads": [
+        { "role": "BA Lead thread:", "message": "Good progress on documentation", "timestamp": "2025-11-20T13:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH015",
+      "rank": 15,
+      "name": "Amina",
+      "role": "Training Coordinator",
+      "department": "L&D",
+      "avatar": "/profile-img/medium-shot-islamic-man-market.jpg",
+      "dateOfJoining": "05/06/2020",
+      "salary": 4100,
+      "contact": "+966878292934",
+      "email": "Amina@company.com",
+      "kpiAchievement": 76,
+      "lmsCompletion": 98,
+      "alertsIssues": "none",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 68 },
+        { "quarter": "Q2", "achievement": 72 },
+        { "quarter": "Q3", "achievement": 76 },
+        { "quarter": "Q4", "achievement": 80 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Training Program Development",
+          "description": "Design and deliver comprehensive training programs to enhance employee skills",
+          "metrics": [
+            "Launch 10 new training modules",
+            "Achieve 85% training completion rate",
+            "90% positive feedback scores"
+          ],
+          "progress": 82,
+          "expanded": true
+        },
+        { "id": "002", "title": "E-Learning Platform Enhancement", "progress": 70, "expanded": false },
+        { "id": "003", "title": "Training Needs Analysis", "progress": 65, "expanded": false }
+      ],
+      "threads": [
+        { "role": "L&D Manager thread:", "message": "Excellent training delivery", "timestamp": "2025-11-19T14:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH016",
+      "rank": 16,
+      "name": "Bilal",
+      "role": "Network Engineer",
+      "department": "Infrastructure",
+      "avatar": "/profile-img/muslim-man-front-golden-wall.jpg",
+      "dateOfJoining": "29/01/2019",
+      "salary": 5400,
+      "contact": "+966878292935",
+      "email": "Bilal@company.com",
+      "kpiAchievement": 73,
+      "lmsCompletion": 72,
+      "alertsIssues": "review",
+      "status": "Mid",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 65 },
+        { "quarter": "Q2", "achievement": 69 },
+        { "quarter": "Q3", "achievement": 73 },
+        { "quarter": "Q4", "achievement": 76 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Network Infrastructure Upgrade",
+          "description": "Modernize network infrastructure to improve performance and reliability",
+          "metrics": [
+            "99.9% network uptime",
+            "Reduce latency by 25%",
+            "Complete network documentation"
+          ],
+          "progress": 58,
+          "expanded": true
+        },
+        { "id": "002", "title": "Disaster Recovery Planning", "progress": 65, "expanded": false },
+        { "id": "003", "title": "Network Monitoring Enhancement", "progress": 70, "expanded": false }
+      ],
+      "threads": [
+        { "role": "IT Director thread:", "message": "Review network upgrade plan", "timestamp": "2025-11-21T10:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH017",
+      "rank": 17,
+      "name": "Huda",
+      "role": "Procurement Specialist",
+      "department": "Procurement",
+      "avatar": "/profile-img/people-celebrating-ramadan-together.jpg",
+      "dateOfJoining": "11/08/2022",
+      "salary": 4300,
+      "contact": "+966878292936",
+      "email": "Huda@company.com",
+      "kpiAchievement": 68,
+      "lmsCompletion": 78,
+      "alertsIssues": "pending",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 58 },
+        { "quarter": "Q2", "achievement": 62 },
+        { "quarter": "Q3", "achievement": 68 },
+        { "quarter": "Q4", "achievement": 72 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Vendor Management Optimization",
+          "description": "Improve vendor relationships and negotiate better contracts for cost savings",
+          "metrics": [
+            "Achieve 10% cost savings",
+            "Reduce vendor lead time by 20%",
+            "95% vendor compliance rate"
+          ],
+          "progress": 55,
+          "expanded": true
+        },
+        { "id": "002", "title": "Procurement Process Automation", "progress": 45, "expanded": false },
+        { "id": "003", "title": "Supplier Diversity Program", "progress": 40, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Procurement Manager thread:", "message": "Complete pending vendor reviews", "timestamp": "2025-11-22T09:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH018",
+      "rank": 18,
+      "name": "Kareem",
+      "role": "Content Writer",
+      "department": "Communications",
+      "avatar": "/profile-img/portrait-man-wearing-lavender-colored-fashion-garments-color-year.jpg",
+      "dateOfJoining": "03/04/2023",
+      "salary": 3600,
+      "contact": "+966878292937",
+      "email": "Kareem@company.com",
+      "kpiAchievement": 64,
+      "lmsCompletion": 70,
+      "alertsIssues": "none",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 52 },
+        { "quarter": "Q2", "achievement": 58 },
+        { "quarter": "Q3", "achievement": 64 },
+        { "quarter": "Q4", "achievement": 68 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Content Quality Improvement",
+          "description": "Enhance content quality and consistency across all communication channels",
+          "metrics": [
+            "Publish 20 blog posts per quarter",
+            "Achieve 5% engagement rate",
+            "Reduce content revision cycles by 30%"
+          ],
+          "progress": 52,
+          "expanded": true
+        },
+        { "id": "002", "title": "SEO Optimization", "progress": 60, "expanded": false },
+        { "id": "003", "title": "Content Calendar Management", "progress": 65, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Content Lead thread:", "message": "Good improvement in writing quality", "timestamp": "2025-11-20T11:00:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH019",
+      "rank": 19,
+      "name": "Salma",
+      "role": "HR Coordinator",
+      "department": "HR",
+      "avatar": "/profile-img/portrait-muslim-man.jpg",
+      "dateOfJoining": "19/07/2023",
+      "salary": 3400,
+      "contact": "+966878292938",
+      "email": "Salma@company.com",
+      "kpiAchievement": 60,
+      "lmsCompletion": 65,
+      "alertsIssues": "urgent",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 48 },
+        { "quarter": "Q2", "achievement": 54 },
+        { "quarter": "Q3", "achievement": 60 },
+        { "quarter": "Q4", "achievement": 64 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Employee Onboarding Process",
+          "description": "Streamline and improve the employee onboarding experience",
+          "metrics": [
+            "Reduce onboarding time by 25%",
+            "Achieve 90% new hire satisfaction",
+            "Complete all onboarding documentation"
+          ],
+          "progress": 42,
+          "expanded": true
+        },
+        { "id": "002", "title": "HR Documentation Management", "progress": 55, "expanded": false },
+        { "id": "003", "title": "Employee Records Digitization", "progress": 38, "expanded": false }
+      ],
+      "threads": [
+        { "role": "HR Manager thread:", "message": "Urgent: Complete pending onboarding tasks", "timestamp": "2025-11-22T08:00:00Z" },
+        { "role": "Training thread:", "message": "Schedule HR system training", "timestamp": "2025-11-22T10:30:00Z" }
+      ]
+    },
+    {
+      "id": "IDRH020",
+      "rank": 20,
+      "name": "Waleed",
+      "role": "Junior Developer",
+      "department": "IT",
+      "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-making-meditation-gesture-with-fingers-standing-orange-wall.jpg",
+      "dateOfJoining": "25/09/2023",
+      "salary": 3200,
+      "contact": "+966878292939",
+      "email": "Waleed@company.com",
+      "kpiAchievement": 55,
+      "lmsCompletion": 58,
+      "alertsIssues": "pending",
+      "status": "Low",
+      "performanceHistory": [
+        { "quarter": "Q1", "achievement": 42 },
+        { "quarter": "Q2", "achievement": 48 },
+        { "quarter": "Q3", "achievement": 55 },
+        { "quarter": "Q4", "achievement": 60 }
+      ],
+      "goals": [
+        {
+          "id": "001",
+          "title": "Technical Skill Development",
+          "description": "Improve coding skills and learn new technologies for career growth",
+          "metrics": [
+            "Complete 5 technical certifications",
+            "Contribute to 3 major projects",
+            "Achieve code review approval rate of 85%"
+          ],
+          "progress": 35,
+          "expanded": true
+        },
+        { "id": "002", "title": "Code Quality Standards", "progress": 45, "expanded": false },
+        { "id": "003", "title": "Team Collaboration Skills", "progress": 50, "expanded": false }
+      ],
+      "threads": [
+        { "role": "Senior Dev thread:", "message": "Complete pending code reviews", "timestamp": "2025-11-21T14:00:00Z" },
+        { "role": "Mentor thread:", "message": "Schedule weekly mentoring session", "timestamp": "2025-11-22T09:00:00Z" }
+      ]
+    }
+  ]
+}
