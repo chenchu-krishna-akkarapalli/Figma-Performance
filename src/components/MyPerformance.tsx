@@ -1,4 +1,3 @@
-import { Navbar } from './Navbar';
 import { MyPerformanceBreadcrumb } from './MyPerformanceBreadcrumb';
 import { LeftSidebar } from './LeftSidebar';
 import { PerformanceTable } from './PerformanceTable';
@@ -10,13 +9,10 @@ export function MyPerformance() {
   return (
     <EmployeeProvider>
       <div 
-        className="h-screen bg-[#EDEFF1] flex flex-col items-center overflow-hidden" 
+        className="flex-1 bg-[#EDEFF1] flex flex-col items-center overflow-hidden" 
         data-name="My performance" 
         data-node-id="1:734"
       >
-        {/* Top Navigation */}
-        <Navbar />
-
         {/* Main Content Container - Centered */}
         <div 
           className="relative flex-1" 

@@ -1,0 +1,162 @@
+{
+  "cycles": [
+    {
+      "id": "CYCLE-2024-Q1",
+      "name": "2024 Q1 Cycle",
+      "year": 2024,
+      "quarter": "Q1",
+      "status": "active",
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-31",
+      "createdAt": "2023-12-15",
+      "createdBy": "HR-Admin",
+      "departments": ["HR", "Finance", "Sales", "IT", "Marketing", "Operations"],
+      "goals": [
+        {
+          "id": "GOAL-2024-Q1-001",
+          "departmentId": "HR",
+          "employeeId": "IDRH001",
+          "employeeName": "Ahmad",
+          "title": "Talent Acquisition Enhancement",
+          "description": "Improve recruitment process efficiency and hire top talent for critical positions",
+          "duration": "90 days",
+          "startDate": "2024-01-01",
+          "endDate": "2024-03-31",
+          "status": "under_review",
+          "createdAt": "2024-01-05",
+          "criteria": [
+            "Reduce time-to-hire by 20%",
+            "Increase offer acceptance rate to 85%",
+            "Complete 10 successful placements",
+            "Employee satisfaction score > 4.0/5"
+          ],
+          "reviews": [
+            {
+              "id": "REVIEW-001-001",
+              "reviewerId": "MGR-001",
+              "reviewerName": "Michael Chen",
+              "reviewerRole": "Floor Manager",
+              "status": "completed",
+              "rating": 4.5,
+              "comment": "Excellent goal definition with clear metrics. Recommend approval.",
+              "threads": [
+                {
+                  "threadId": "THREAD-001-001",
+                  "author": "Michael Chen",
+                  "role": "Floor Manager",
+                  "message": "Timeline looks aggressive but achievable. Consider hiring 2 additional recruiters.",
+                  "timestamp": "2024-01-05T10:30:00Z",
+                  "resolved": false
+                }
+              ],
+              "timestamp": "2024-01-05T14:00:00Z"
+            },
+            {
+              "id": "REVIEW-001-002",
+              "reviewerId": "HR-MGR-001",
+              "reviewerName": "Sarah Johnson",
+              "reviewerRole": "HR Manager",
+              "status": "pending",
+              "rating": 0,
+              "comment": "",
+              "threads": [
+                {
+                  "threadId": "THREAD-001-002",
+                  "author": "Sarah Johnson",
+                  "role": "HR Manager",
+                  "message": "Please clarify the budget allocation for this goal. Budget approval needed.",
+                  "timestamp": "2024-01-06T09:15:00Z",
+                  "resolved": false
+                }
+              ],
+              "timestamp": "2024-01-06T09:15:00Z"
+            }
+          ],
+          "employeeComments": [
+            {
+              "commentId": "EMPL-COMMENT-001-001",
+              "type": "mid_year",
+              "author": "Ahmad",
+              "content": "We have successfully completed 8 placements so far. Team is working efficiently on remaining tasks.",
+              "timestamp": "2024-06-30T15:45:00Z"
+            }
+          ]
+        },
+        {
+          "id": "GOAL-2024-Q1-002",
+          "departmentId": "Sales",
+          "employeeId": "IDRH002",
+          "employeeName": "Fatima",
+          "title": "Sales Pipeline Expansion",
+          "description": "Expand sales pipeline by 40% and increase customer acquisition rate",
+          "duration": "90 days",
+          "startDate": "2024-01-01",
+          "endDate": "2024-03-31",
+          "status": "approved",
+          "createdAt": "2024-01-06",
+          "criteria": [
+            "Add 50 new qualified leads",
+            "Achieve 35% conversion rate",
+            "Close minimum $500K in deals",
+            "Maintain customer satisfaction > 4.2/5"
+          ],
+          "reviews": [
+            {
+              "id": "REVIEW-002-001",
+              "reviewerId": "MGR-002",
+              "reviewerName": "James Wilson",
+              "reviewerRole": "Floor Manager",
+              "status": "completed",
+              "rating": 4.8,
+              "comment": "Outstanding goal with strong market focus. Fully approved.",
+              "threads": [
+                {
+                  "threadId": "THREAD-002-001",
+                  "author": "James Wilson",
+                  "role": "Floor Manager",
+                  "message": "Great goal Fatima! Your track record supports these targets. I'm confident in your ability to achieve this.",
+                  "timestamp": "2024-01-06T11:00:00Z",
+                  "resolved": true
+                }
+              ],
+              "timestamp": "2024-01-06T14:30:00Z"
+            },
+            {
+              "id": "REVIEW-002-002",
+              "reviewerId": "HR-MGR-002",
+              "reviewerName": "David Brown",
+              "reviewerRole": "HR Manager",
+              "status": "completed",
+              "rating": 4.5,
+              "comment": "Approved. Ensure proper documentation of all deals.",
+              "threads": [],
+              "timestamp": "2024-01-07T10:00:00Z"
+            }
+          ],
+          "employeeComments": [
+            {
+              "commentId": "EMPL-COMMENT-002-001",
+              "type": "mid_year",
+              "author": "Fatima",
+              "content": "Progressing well. We have added 35 qualified leads and closed $350K in deals so far. On track to exceed targets.",
+              "timestamp": "2024-06-30T16:20:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CYCLE-2024-Q2",
+      "name": "2024 Q2 Cycle",
+      "year": 2024,
+      "quarter": "Q2",
+      "status": "planning",
+      "startDate": "2024-04-01",
+      "endDate": "2024-06-30",
+      "createdAt": "2024-03-20",
+      "createdBy": "HR-Admin",
+      "departments": ["HR", "Finance", "Sales", "IT", "Marketing", "Operations"],
+      "goals": []
+    }
+  ]
+}

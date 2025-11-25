@@ -3,11 +3,19 @@ import type { ReactNode } from 'react';
 import type { Employee } from '../types/employee';
 import employeeData from '../data/employeeProfile.json';
 
+type ActiveModule = 'performance' | 'init_cycle' | 'create_goal' | 'goal_review' | 'employee_comments';
+
 interface EmployeeContextType {
   employees: Employee[];
   selectedEmployee: Employee | null;
   selectEmployee: (employee: Employee) => void;
   addThread: (employeeId: string, role: string, message: string) => void;
+  activeModule: ActiveModule;
+  setActiveModule: (module: ActiveModule) => void;
+  selectedCycleId: string | null;
+  setSelectedCycleId: (cycleId: string | null) => void;
+  selectedGoalId: string | null;
+  setSelectedGoalId: (goalId: string | null) => void;
 }
 
 const EmployeeContext = createContext<EmployeeContextType | undefined>(undefined);
@@ -17,6 +25,9 @@ export function EmployeeProvider({ children }: { children: ReactNode }) {
   const [selectedEmployee, setSelectedEmployee] = useState<Employee | null>(
     employeeData.employees[0] as Employee
   );
+  const [activeModule, setActiveModule] = useState<ActiveModule>('performance');
+  const [selectedCycleId, setSelectedCycleId] = useState<string | null>(null);
+  const [selectedGoalId, setSelectedGoalId] = useState<string | null>(null);
 
   const selectEmployee = (employee: Employee) => {
     setSelectedEmployee(employee);
@@ -41,7 +52,20 @@ export function EmployeeProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <EmployeeContext.Provider value={{ employees, selectedEmployee, selectEmployee, addThread }}>
+    <EmployeeContext.Provider 
+      value={{ 
+        employees, 
+        selectedEmployee, 
+        selectEmployee, 
+        addThread,
+        activeModule,
+        setActiveModule,
+        selectedCycleId,
+        setSelectedCycleId,
+        selectedGoalId,
+        setSelectedGoalId,
+      }}
+    >
       {children}
     </EmployeeContext.Provider>
   );

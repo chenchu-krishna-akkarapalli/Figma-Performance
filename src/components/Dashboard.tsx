@@ -23,7 +23,6 @@ import { FiTarget, FiAlertCircle, FiCheckCircle } from "react-icons/fi";
 import { WelcomeBanner } from "./WelcomeBanner";
 import { ProfileSection } from "./ProfileSection";
 import { SkillSetSection } from "./SkillSetSection";
-import { Navbar } from "./Navbar";
 import { Breadcrumb } from "./Breadcrumb";
 import { PerformersTable } from "./PerformersTable";
 
@@ -32,6 +31,7 @@ const salesData = [
   { month: "Jan", sales: 40 },
   { month: "Feb", sales: 60 },
   { month: "Mar", sales: 35 },
+  
   { month: "Apr", sales: 75 },
   { month: "May", sales: 50 },
   { month: "Jun", sales: 85 },
@@ -199,9 +199,6 @@ export function Dashboard() {
       data-name="Dashboard"
       data-node-id="1:6"
     >
-      {/* Top Navigation */}
-      <Navbar />
-
       {/* Main Content Container - Centered with scroll */}
       <div
         className="dashboard-content relative flex-1 overflow-y-auto scrollbar-hide"

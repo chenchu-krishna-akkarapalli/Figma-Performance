@@ -13,9 +13,16 @@ import {
   IoCheckmarkCircle,
   IoLayers,
 } from "react-icons/io5"
+import { useEmployee } from '../context/EmployeeContext';
 
 // Left Sidebar Component
 export function LeftSidebar() {
+  const { activeModule, setActiveModule } = useEmployee();
+
+  const handleModuleClick = (module: string) => {
+    setActiveModule(module as any);
+  };
+
   return (
     <div
       className="bg-white gradient-border rounded-[42px] w-[214px] h-full flex flex-col p-4"
@@ -84,18 +91,28 @@ export function LeftSidebar() {
 
           {/* Goal Buttons */}
           <div className="space-y-2">
-            <button className="flex items-center gap-[8px] px-3 py-2 w-full rounded-lg hover:bg-gray-200 transition-colors duration-200">
-              <IoCalendar className="w-4 h-4 flex-shrink-0 text-black" />
+            <button 
+              onClick={() => setActiveModule('performance')}
+              className={`flex items-center gap-2 px-3 py-2 w-full rounded-lg transition-colors duration-200 ${
+                activeModule === 'performance' ? 'bg-purple-200 hover:bg-purple-300' : 'hover:bg-gray-200'
+              }`}
+            >
+              <IoCalendar className="w-4 h-4 shrink-0 text-black" />
               <span className="text-xs text-black font-medium">Current Goal</span>
             </button>
 
-            <button className="flex items-center gap-[8px] px-3 py-2 w-full rounded-lg hover:bg-gray-200 transition-colors duration-200">
-              <IoRefresh className="w-4 h-4 flex-shrink-0 text-black" />
-              <span className="text-xs text-black font-medium">Next Cycle</span>
+            <button 
+              onClick={() => setActiveModule('init_cycle')}
+              className={`flex items-center gap-2 px-3 py-2 w-full rounded-lg transition-colors duration-200 ${
+                activeModule === 'init_cycle' ? 'bg-purple-200 hover:bg-purple-300' : 'hover:bg-gray-200'
+              }`}
+            >
+              <IoRefresh className="w-4 h-4 shrink-0 text-black" />
+              <span className="text-xs text-black font-medium">Init Cycle</span>
             </button>
 
-            <button className="flex items-center gap-[8px] px-3 py-2 w-full rounded-lg hover:bg-gray-200 transition-colors duration-200">
-              <IoBook className="w-4 h-4 flex-shrink-0 text-black" />
+            <button className="flex items-center gap-2 px-3 py-2 w-full rounded-lg hover:bg-gray-200 transition-colors duration-200">
+              <IoBook className="w-4 h-4 shrink-0 text-black" />
               <span className="text-xs text-black font-medium">Learning Cycle</span>
             </button>
 
