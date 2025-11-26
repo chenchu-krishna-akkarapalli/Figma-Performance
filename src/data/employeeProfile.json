@@ -13,7 +13,7 @@
       "email": "Raheem@company.com",
       "kpiAchievement": 98,
       "lmsCompletion": 82,
-      "alertsIssues": "none",
+      "grade": 5,
       "status": "Top",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 45 },
@@ -48,7 +48,7 @@
     {
       "id": "IDRH002",
       "rank": 2,
-      "name": "Sarah",
+      "name": "Sarah Al Malki",
       "role": "Senior Developer",
       "department": "IT",
       "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall (1).jpg",
@@ -58,8 +58,8 @@
       "email": "Sarah@company.com",
       "kpiAchievement": 95,
       "lmsCompletion": 90,
-      "alertsIssues": "none",
-      "status": "Top",
+      "grade": 5,
+      "status": "Outstanding Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 85 },
         { "quarter": "Q2", "achievement": 92 },
@@ -90,7 +90,7 @@
     {
       "id": "IDRH003",
       "rank": 3,
-      "name": "Ahmed",
+      "name": "Ahmed Alazahrani",
       "role": "Sales Executive",
       "department": "Sales",
       "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall.jpg",
@@ -100,8 +100,8 @@
       "email": "Ahmed@company.com",
       "kpiAchievement": 92,
       "lmsCompletion": 78,
-      "alertsIssues": "pending",
-      "status": "Top",
+      "grade": 4,
+      "status": "Outstanding Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 70 },
         { "quarter": "Q2", "achievement": 85 },
@@ -132,7 +132,7 @@
     {
       "id": "IDRH004",
       "rank": 4,
-      "name": "Fatima",
+      "name": "Fatima Almotairi",
       "role": "Marketing Specialist",
       "department": "Marketing",
       "avatar": "/profile-img/arabic-man-traditional-wear-smiling-confident-showing-victory-sign-standing-white-wall.jpg",
@@ -142,8 +142,8 @@
       "email": "Fatima@company.com",
       "kpiAchievement": 88,
       "lmsCompletion": 95,
-      "alertsIssues": "none",
-      "status": "Top",
+      "grade": 4,
+      "status": "Outstanding Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 78 },
         { "quarter": "Q2", "achievement": 82 },
@@ -173,7 +173,7 @@
     {
       "id": "IDRH005",
       "rank": 5,
-      "name": "Omar",
+      "name": "Omar Alshmarani",
       "role": "Finance Analyst",
       "department": "Finance",
       "avatar": "/profile-img/medium-shot-islamic-man-market.jpg",
@@ -183,8 +183,8 @@
       "email": "Omar@company.com",
       "kpiAchievement": 85,
       "lmsCompletion": 88,
-      "alertsIssues": "none",
-      "status": "Mid",
+      "grade": 4,
+      "status": "Solid Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 75 },
         { "quarter": "Q2", "achievement": 80 },
@@ -215,7 +215,7 @@
     {
       "id": "IDRH006",
       "rank": 6,
-      "name": "Layla",
+      "name": "Layla Ghazaz",
       "role": "UX Designer",
       "department": "Design",
       "avatar": "/profile-img/muslim-man-front-golden-wall.jpg",
@@ -225,8 +225,8 @@
       "email": "Layla@company.com",
       "kpiAchievement": 82,
       "lmsCompletion": 92,
-      "alertsIssues": "review",
-      "status": "Mid",
+      "grade": 3,
+      "status": "Solid Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 72 },
         { "quarter": "Q2", "achievement": 78 },
@@ -256,7 +256,7 @@
     {
       "id": "IDRH007",
       "rank": 7,
-      "name": "Khalid",
+      "name": "Khalid Bajandou",
       "role": "Operations Manager",
       "department": "Operations",
       "avatar": "/profile-img/people-celebrating-ramadan-together.jpg",
@@ -266,8 +266,8 @@
       "email": "Khalid@company.com",
       "kpiAchievement": 78,
       "lmsCompletion": 70,
-      "alertsIssues": "urgent",
-      "status": "Mid",
+      "grade": 2,
+      "status": "Needs Improvement",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 65 },
         { "quarter": "Q2", "achievement": 70 },
@@ -298,7 +298,7 @@
     {
       "id": "IDRH008",
       "rank": 8,
-      "name": "Noor",
+      "name": "Noor Alqahtani",
       "role": "Customer Support Lead",
       "department": "Support",
       "avatar": "/profile-img/portrait-man-wearing-lavender-colored-fashion-garments-color-year.jpg",
@@ -308,8 +308,8 @@
       "email": "Noor@company.com",
       "kpiAchievement": 75,
       "lmsCompletion": 85,
-      "alertsIssues": "none",
-      "status": "Mid",
+      "grade": 3,
+      "status": "Solid Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 68 },
         { "quarter": "Q2", "achievement": 72 },
@@ -339,7 +339,7 @@
     {
       "id": "IDRH009",
       "rank": 9,
-      "name": "Yusuf",
+      "name": "Yusuf Aljohani",
       "role": "Data Analyst",
       "department": "Analytics",
       "avatar": "/profile-img/portrait-muslim-man.jpg",
@@ -349,8 +349,8 @@
       "email": "Yusuf@company.com",
       "kpiAchievement": 70,
       "lmsCompletion": 75,
-      "alertsIssues": "pending",
-      "status": "Low",
+      "grade": 3,
+      "status": "Developing",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 55 },
         { "quarter": "Q2", "achievement": 62 },
@@ -380,7 +380,7 @@
     {
       "id": "IDRH010",
       "rank": 10,
-      "name": "Aisha",
+      "name": "Aisha Alkhaldi",
       "role": "Legal Counsel",
       "department": "Legal",
       "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-making-meditation-gesture-with-fingers-standing-orange-wall.jpg",
@@ -390,8 +390,8 @@
       "email": "Aisha@company.com",
       "kpiAchievement": 65,
       "lmsCompletion": 60,
-      "alertsIssues": "urgent",
-      "status": "Low",
+      "grade": 1,
+      "status": "Needs Improvement",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 50 },
         { "quarter": "Q2", "achievement": 55 },
@@ -422,7 +422,7 @@
     {
       "id": "IDRH011",
       "rank": 11,
-      "name": "Zainab",
+      "name": "Zainab Alghamdi",
       "role": "Project Manager",
       "department": "PMO",
       "avatar": "/profile-img/profile.jpg",
@@ -432,8 +432,8 @@
       "email": "Zainab@company.com",
       "kpiAchievement": 91,
       "lmsCompletion": 88,
-      "alertsIssues": "none",
-      "status": "Top",
+      "grade": 5,
+      "status": "Outstanding Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 82 },
         { "quarter": "Q2", "achievement": 87 },
@@ -464,7 +464,7 @@
     {
       "id": "IDRH012",
       "rank": 12,
-      "name": "Hassan",
+      "name": "Hassan Al Malki",
       "role": "Security Analyst",
       "department": "IT Security",
       "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall (1).jpg",
@@ -474,8 +474,8 @@
       "email": "Hassan@company.com",
       "kpiAchievement": 87,
       "lmsCompletion": 95,
-      "alertsIssues": "none",
-      "status": "Top",
+      "grade": 5,
+      "status": "Outstanding Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 80 },
         { "quarter": "Q2", "achievement": 84 },
@@ -505,7 +505,7 @@
     {
       "id": "IDRH013",
       "rank": 13,
-      "name": "Mariam",
+      "name": "Mariam Alazahrani",
       "role": "Quality Assurance Lead",
       "department": "QA",
       "avatar": "/profile-img/arabic-businessman-traditional-wear-facial-protective-mask-with-confident-expression-standing-orange-wall.jpg",
@@ -515,8 +515,8 @@
       "email": "Mariam@company.com",
       "kpiAchievement": 84,
       "lmsCompletion": 80,
-      "alertsIssues": "pending",
-      "status": "Mid",
+      "grade": 4,
+      "status": "Solid Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 76 },
         { "quarter": "Q2", "achievement": 80 },
@@ -547,7 +547,7 @@
     {
       "id": "IDRH014",
       "rank": 14,
-      "name": "Tariq",
+      "name": "Tariq Almotairi",
       "role": "Business Analyst",
       "department": "Business",
       "avatar": "/profile-img/arabic-man-traditional-wear-smiling-confident-showing-victory-sign-standing-white-wall.jpg",
@@ -557,8 +557,8 @@
       "email": "Tariq@company.com",
       "kpiAchievement": 79,
       "lmsCompletion": 82,
-      "alertsIssues": "none",
-      "status": "Mid",
+      "grade": 3,
+      "status": "Solid Performer",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 70 },
         { "quarter": "Q2", "achievement": 74 },
@@ -598,7 +598,7 @@
       "email": "Amina@company.com",
       "kpiAchievement": 76,
       "lmsCompletion": 98,
-      "alertsIssues": "none",
+      "grade": 3,
       "status": "Mid",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 68 },
@@ -639,7 +639,7 @@
       "email": "Bilal@company.com",
       "kpiAchievement": 73,
       "lmsCompletion": 72,
-      "alertsIssues": "review",
+      "grade": 3,
       "status": "Mid",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 65 },
@@ -680,7 +680,7 @@
       "email": "Huda@company.com",
       "kpiAchievement": 68,
       "lmsCompletion": 78,
-      "alertsIssues": "pending",
+      "grade": 2,
       "status": "Low",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 58 },
@@ -721,7 +721,7 @@
       "email": "Kareem@company.com",
       "kpiAchievement": 64,
       "lmsCompletion": 70,
-      "alertsIssues": "none",
+      "grade": 2,
       "status": "Low",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 52 },
@@ -762,7 +762,7 @@
       "email": "Salma@company.com",
       "kpiAchievement": 60,
       "lmsCompletion": 65,
-      "alertsIssues": "urgent",
+      "grade": 1,
       "status": "Low",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 48 },
@@ -804,7 +804,7 @@
       "email": "Waleed@company.com",
       "kpiAchievement": 55,
       "lmsCompletion": 58,
-      "alertsIssues": "pending",
+      "grade": 2,
       "status": "Low",
       "performanceHistory": [
         { "quarter": "Q1", "achievement": 42 },

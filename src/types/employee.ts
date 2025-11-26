@@ -33,7 +33,7 @@ export interface Employee {
   email: string;
   kpiAchievement: number;
   lmsCompletion: number;
-  alertsIssues: string;
+  grade: number;
   status: string;
   performanceHistory: PerformanceQuarter[];
   goals: GoalMetric[];

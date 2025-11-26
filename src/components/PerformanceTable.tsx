@@ -30,16 +30,20 @@ export function PerformanceTable() {
     }
   };
 
-  const getAlertColor = (alert: string) => {
-    switch (alert.toLowerCase()) {
-      case 'urgent':
-        return 'text-red-600 font-bold';
-      case 'pending':
-        return 'text-yellow-600';
-      case 'review':
-        return 'text-blue-600';
+  const getGradeColor = (grade: number) => {
+    switch (grade) {
+      case 5:
+        return 'bg-green-100 text-green-900';
+      case 4:
+        return 'bg-blue-100 text-blue-900';
+      case 3:
+        return 'bg-yellow-100 text-yellow-900';
+      case 2:
+        return 'bg-orange-100 text-orange-900';
+      case 1:
+        return 'bg-red-100 text-red-900';
       default:
-        return 'text-gray-600';
+        return 'bg-gray-100 text-gray-900';
     }
   };
 
@@ -62,7 +66,7 @@ export function PerformanceTable() {
               <th className="py-1.5 px-1 text-center font-bold" style={{width: '100px'}}>KPI Achievement (%)</th>
               <th className="py-1.5 px-1 text-center font-bold" style={{width: '65px'}}>Department</th>
               <th className="py-1.5 px-1 text-center font-bold" style={{width: '100px'}}>LMS Completion (%)</th>
-              <th className="py-1.5 px-1 text-center font-bold" style={{width: '65px'}}>Alerts/Issues</th>
+              <th className="py-1.5 px-1 text-center font-bold" style={{width: '50px'}}>Grade</th>
               <th className="py-1.5 px-1 text-center font-bold" style={{width: '40px'}}>Status</th>
             </tr>
           </thead>
@@ -97,8 +101,10 @@ export function PerformanceTable() {
                   <td className="py-1.5 px-1 text-center" style={{width: '100px'}}>{employee.kpiAchievement}</td>
                   <td className="py-1.5 px-1 text-center" style={{width: '65px'}}>{employee.department}</td>
                   <td className="py-1.5 px-1 text-center" style={{width: '100px'}}>{employee.lmsCompletion}</td>
-                  <td className={`py-1.5 px-1 text-center ${getAlertColor(employee.alertsIssues)}`} style={{width: '65px'}}>
-                    {employee.alertsIssues}
+                  <td className="py-1.5 px-1 text-center" style={{width: '50px'}}>
+                    <span className={`px-2 py-1 rounded-full text-xs font-bold ${getGradeColor(employee.grade)}`}>
+                      {employee.grade}
+                    </span>
                   </td>
                   <td className={`py-1.5 px-1 text-center ${getStatusColor(employee.status)}`} style={{width: '40px'}}>
                     {employee.status}

@@ -22,7 +22,7 @@ import { WelcomeBanner } from "./WelcomeBanner";
 import { ProfileSection } from "./ProfileSection";
 import { SkillSetSection } from "./SkillSetSection";
 import { PerformersTable } from "./PerformersTable";
-import { EmployeeProfile } from "./EmployeeProfile";
+import  EmployeeProfile from "./Employee-details-component";
 import { useState } from "react";
 
 // Chart Data
@@ -112,99 +112,104 @@ const performersData = [
   {
     id: 1,
     rank: 1,
-    name: "Raheem",
+    name: "Raheem Alghamdi",
     kpi: 98,
     health: 99,
     lms: 82,
-    alerts: "none",
-    status: "Top",
+    grade: 5,
+    status: "Outstanding Performer",
   },
   {
     id: 2,
     rank: 2,
-    name: "Ahmad",
+    name: "Ahmad Alazahrani",
     kpi: 96,
     health: 97,
     lms: 80,
-    alerts: "none",
-    status: "Top",
+    grade: 5,
+    status: "Outstanding Performer",
   },
   {
     id: 3,
     rank: 3,
-    name: "Sara",
+    name: "Sara Al Malki",
     kpi: 94,
     health: 95,
     lms: 78,
-    alerts: "minor",
-    status: "High",
+    grade: 5,
+    status: "Outstanding Performer",
   },
   {
     id: 4,
     rank: 4,
-    name: "Mohamed",
+    name: "Mohamed Almotairi",
     kpi: 92,
     health: 93,
     lms: 76,
-    alerts: "none",
-    status: "High",
+    grade: 4,
+    status: "Solid Performer",
   },
   {
     id: 5,
     rank: 5,
-    name: "Fatima",
+    name: "Fatima Almotairi",
     kpi: 90,
     health: 91,
     lms: 74,
-    alerts: "none",
-    status: "Mid",
+    grade: 4,
+    status: "Outstanding Performer",
   },
   {
     id: 6,
     rank: 6,
-    name: "Hassan",
+    name: "Hassan Al Malki",
     kpi: 88,
     health: 89,
     lms: 72,
-    alerts: "minor",
-    status: "Mid",
+    grade: 4,
+    status: "Outstanding Performer",
   },
   {
     id: 7,
     rank: 7,
-    name: "Layla",
+    name: "Layla Ghazaz",
     kpi: 86,
     health: 87,
     lms: 70,
-    alerts: "none",
-    status: "Mid",
+    grade: 3,
+    status: "Solid Performer",
   },
   {
     id: 8,
     rank: 8,
-    name: "Karim",
+    name: "Khalid Bajandou",
     kpi: 84,
     health: 85,
     lms: 68,
-    alerts: "major",
-    status: "Low",
+    grade: 2,
+    status: "Needs Improvement",
   },
 ];
 
 export function Dashboard() {
   const [openProfile, setOpenProfile] = useState(false);
-
-  const profileData = {
-    name: "Raheem",
-    jobDescription: "Senior Sales Executive",
-    department: "Sales",
-    manager: "Mohamed Ali",
-    experience: "5 Years",
-    primarySkills: ["Sales Strategy", "Client Handling", "Negotiation"],
-    secondarySkills: ["Excel", "Presentation", "Team Support"],
-    pastProjects: ["Q1 Sales Campaign", "Product Launch 2023", "Lead Conversion Automation"],
-    currentProjects: ["CRM Optimization Project", "Monthly KPI Boost Campaign"]
-  };
+ 
+  // Employee object to send to modal
+  const employeeData = {
+    id: "EMP-1033",
+    name: "Ahmad",
+    role: "UI/UX Designer",
+    jobDescription:
+      "A UI/UX Designer is responsible for creating intuitive, user-centered, and visually appealing digital experiences. This role focuses on understanding user needs, designing seamless user journeys, and crafting beautiful interfaces that enhance product usability and engagement.",
+    department: "UI/UX Design",
+    manager: "Ali Al-Mutairi",
+    experience: "4+ Years",
+    primarySkills: ["UI/UX Design", "Wireframing", "Prototyping"],
+    secondarySkills: ["Figma", "Sketch", "Adobe XD"],
+    currentProjects: ["Performance Dashboard UI", "Manager Review Portal"],
+    pastProjects: ["E-commerce App", "Banking App UI", "Delivery App Revamp"],
+    cvUrl: "/cv/ahmad-cv.pdf",
+  }; 
 
   return (
     <div
@@ -221,9 +226,17 @@ export function Dashboard() {
         <WelcomeBanner />
 
         {/* Content Cards Container */}
-        <div className="relative w-full" style={{ height: "1000px" }}>
-          {/* User Profile Card */}
-          <ProfileSection />
+         <div className="relative w-full" style={{ height: "1000px" }}>
+ 
+          {/* Profile Section */}
+          <ProfileSection onProfileClick={() => setOpenProfile(true)} />
+ 
+          {/* MODAL */}
+          <EmployeeProfile
+            open={openProfile}
+            onClose={() => setOpenProfile(false)}
+            employee={employeeData}
+          />
 
           {/* Skill Set Card */}
           <SkillSetSection />
@@ -324,7 +337,7 @@ export function Dashboard() {
 
           {/* Quick Actions */}
           <div
-            className="absolute gradient-border rounded-[42px] h-[408px] left-[1258px] top-[130px] w-[161px] p-[10px] flex flex-col"
+            className="absolute gradient-border rounded-[42px] h-[408px] left-[1255px] top-[130px] w-[161px] p-[10px] flex flex-col"
             data-node-id="1:85"
           >
             <div className="text-center mb-3 flex-shrink-0">
@@ -337,7 +350,7 @@ export function Dashboard() {
                 <p className="text-gray-700 text-[11px] font-bold uppercase text-center leading-[12px] mt-1 w-full">
                   Create Goal
                 </p>
-                <div className="bg-[#5d5d5d] border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1">
+                <div className="border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1" style={{ background: "linear-gradient(135deg, #AD46FF 0%, #E9D4FF 100%)" }}>
                   <FiTarget className="w-[28px] h-[28px] text-white" />
                 </div>
               </div>
@@ -345,7 +358,7 @@ export function Dashboard() {
                 <p className="text-gray-700 text-[11px] font-bold uppercase text-center leading-[12px] mt-1 w-full">
                   Report Issue
                 </p>
-                <div className="bg-[#5d5d5d] border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1">
+                <div className="border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1" style={{ background: "linear-gradient(135deg, #AD46FF 0%, #E9D4FF 100%)" }}>
                   <FiAlertCircle className="w-[28px] h-[28px] text-white" />
                 </div>
               </div>
@@ -353,7 +366,7 @@ export function Dashboard() {
                 <p className="text-gray-700 text-[11px] font-bold uppercase text-center leading-[12px] mt-1 w-full">
                   Check-in
                 </p>
-                <div className="bg-[#5d5d5d] border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1">
+                <div className="border-2 border-[#404040] rounded-[18px] h-[50px] w-[100px] flex items-center justify-center mb-1" style={{ background: "linear-gradient(135deg, #AD46FF 0%, #E9D4FF 100%)" }}>
                   <FiCheckCircle className="w-[28px] h-[28px] text-white" />
                 </div>
               </div>
@@ -379,12 +392,10 @@ export function Dashboard() {
                 Dept KPI Achievement
               </p>
             </div>
-            <ResponsiveContainer width="110%" height={340}>
-              {" "}
-              {/* Increased width & height slightly */}
+            <ResponsiveContainer width="100%" height={340}>
               <BarChart
                 data={departmentKPIData}
-                margin={{ top: 20, right: 50, left: 10, bottom: 60 }}
+                margin={{ top: 10, right: 30, left: -10, bottom: 60 }}
               >
                 <defs>
                   <linearGradient id="deptKpiGradient" x1="0" y1="0" x2="0" y2="1">
@@ -397,21 +408,23 @@ export function Dashboard() {
 
                 <XAxis
                   dataKey="name"
-                  fontSize={12} // Increased font size
+                  fontSize={10}
                   angle={-45}
                   textAnchor="end"
-                  height={70}
+                  height={60}
                   stroke="#666"
                 />
 
                 <YAxis
-                  fontSize={12} // Increased font size
+                  fontSize={10}
                   stroke="#666"
+                  width={35}
                   label={{
                     value: "Achievement %",
                     angle: -90,
                     position: "insideLeft",
-                    style: { fontSize: 14 },
+                    offset: 10,
+                    style: { fontSize: 11 },
                   }}
                 />
 
@@ -420,7 +433,7 @@ export function Dashboard() {
                     backgroundColor: "#fff",
                     border: "1px solid #ccc",
                     borderRadius: "6px",
-                    fontSize: "12px",
+                    fontSize: "11px",
                   }}
                 />
 
@@ -428,7 +441,7 @@ export function Dashboard() {
                   dataKey="achievement"
                   fill="url(#deptKpiGradient)"
                   radius={[8, 8, 0, 0]}
-                  barSize={38} // Increased bar width
+                  barSize={32}
                 />
               </BarChart>
             </ResponsiveContainer>
@@ -442,12 +455,7 @@ export function Dashboard() {
         </div>
       </div>
 
-      {/* Employee Profile Modal */}
-      <EmployeeProfile
-        open={openProfile}
-        onClose={() => setOpenProfile(false)}
-        employee={profileData}
-      />
+      
     </div>
   );
 }

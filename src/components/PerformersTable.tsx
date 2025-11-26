@@ -1,6 +1,7 @@
 import { imgFrame48 } from "./Icons";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 interface Performer {
   id: number;
@@ -9,7 +10,7 @@ interface Performer {
   kpi: number;
   health: number;
   lms: number;
-  alerts: string;
+  grade: number;
   status: string;
 }
 
@@ -38,12 +39,20 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
   };
 
   return (
-    <div
-      className="absolute gradient-border rounded-[42px] h-[408px] left-[611px] top-[548px] w-[808px] p-[16px] overflow-hidden flex flex-col"
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="absolute gradient-border rounded-[42px] h-[408px] left-[611px] top-[548px] w-[792px] p-[16px] overflow-hidden flex flex-col"
       data-node-id="1:109"
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-3 flex-shrink-0">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.1 }}
+        className="flex items-center justify-between mb-3 flex-shrink-0"
+      >
         <div className="flex items-center gap-2">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -59,7 +68,12 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
             Performers
           </p>
         </div>
-        <div className="flex gap-3">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.15 }}
+          className="flex gap-3"
+        >
           {/* Status Filter */}
           <div className="relative">
             <button
@@ -160,8 +174,8 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
           <button className="gradient-border-xs rounded-[12px] px-4 py-2 text-[12px] text-black font-semibold hover:bg-gray-50 transition">
             View all
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Table */}
       <div className="overflow-y-auto flex-1 border-t border-gray-200">
@@ -188,7 +202,7 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
                 LMS (%)
               </th>
               <th className="text-left py-2.5 px-3 text-black font-bold text-[12px] w-[80px]">
-                Alerts
+                Grade
               </th>
               <th className="text-left py-2.5 px-3 text-black font-bold text-[12px] w-[75px]">
                 Status
@@ -205,7 +219,10 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
                 } hover:bg-gray-100 transition cursor-pointer`}
               >
                 <td className="py-2 px-3 text-black font-semibold text-[12px] w-[50px] flex items-center justify-center">
-                  <img
+                  <motion.img
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: idx * 0.05 }}
                     src={imgFrame48}
                     alt={performer.name}
                     className="w-[32px] h-[32px] rounded-full border-2 border-gray-300 object-cover"
@@ -230,14 +247,18 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
                 <td className="py-2 px-3 text-black text-[11px] w-[80px]">
                   <span
                     className={`px-2 py-1 rounded text-[10px] font-medium ${
-                      performer.alerts === "none"
+                      performer.grade === 5
                         ? "bg-green-100 text-green-800"
-                        : performer.alerts === "minor"
+                        : performer.grade === 4
+                        ? "bg-blue-100 text-blue-800"
+                        : performer.grade === 3
                         ? "bg-yellow-100 text-yellow-800"
+                        : performer.grade === 2
+                        ? "bg-orange-100 text-orange-800"
                         : "bg-red-100 text-red-800"
                     }`}
                   >
-                    {performer.alerts}
+                    {performer.grade}
                   </span>
                 </td>
                 <td className="py-2 px-3 text-black font-bold text-[12px] w-[75px]">
@@ -260,6 +281,6 @@ export function PerformersTable({ data, onProfileClick }: PerformersTableProps) 
           </tbody>
         </table>
       </div>
-    </div>
+    </motion.div>
   );
 }
