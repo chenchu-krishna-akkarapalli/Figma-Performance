@@ -250,7 +250,6 @@ export function CycleOverview() {
       {/* Modals */}
       {openForm === 'start' && selectedCycle && (
         <StartQuarterForm
-          cycleId={selectedCycle.id}
           cycleName={selectedCycle.name}
           onClose={() => setOpenForm(null)}
           onSubmit={(data: StartQuarterFormData) => {
@@ -262,7 +261,6 @@ export function CycleOverview() {
 
       {openForm === 'end' && selectedCycle && (
         <EndQuarterForm
-          cycleId={selectedCycle.id}
           cycleName={selectedCycle.name}
           onClose={() => setOpenForm(null)}
           onSubmit={(data: EndQuarterFormData) => {

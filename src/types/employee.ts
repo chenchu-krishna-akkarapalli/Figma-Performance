@@ -20,6 +20,43 @@ export interface Thread {
   timestamp: string;
 }
 
+export interface FormData {
+  employeeName?: string;
+  department?: string;
+  position?: string;
+  performanceObjectives?: string;
+  keyResponsibilities?: string;
+  skillGaps?: string;
+  developmentPlan?: string;
+  managerExpectations?: string;
+  resources?: string;
+  objectivesAchievement?: string;
+  performanceRating?: string;
+  accomplishments?: string;
+  challenges?: string;
+  employeeComment?: string;
+  managerFeedback?: string;
+  recommendedRating?: string;
+  nextQuarterPriorities?: string;
+  submittedBy?: string;
+  submittedDate?: string;
+  reviewedBy?: string;
+  submittedByRole?: string;
+}
+
+export interface PerformanceCycle {
+  id: string;
+  name: string;
+  quarter: string;
+  year: number;
+  department: string;
+  startDate: string;
+  endDate: string;
+  startQuarterForm?: FormData;
+  endQuarterForm?: FormData;
+  status: 'Completed' | 'In Progress';
+}
+
 export interface Employee {
   id: string;
   rank: number;
@@ -38,6 +75,7 @@ export interface Employee {
   performanceHistory: PerformanceQuarter[];
   goals: GoalMetric[];
   threads: Thread[];
+  cycles?: PerformanceCycle[];
 }
 
 export interface EmployeeData {

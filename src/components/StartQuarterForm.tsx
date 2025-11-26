@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FiSave, FiX } from 'react-icons/fi';
 
 interface StartQuarterFormProps {
-  cycleId: string;
   cycleName: string;
   onClose: () => void;
   onSubmit: (formData: StartQuarterFormData) => void;
@@ -20,7 +19,7 @@ export interface StartQuarterFormData {
   resources: string;
 }
 
-export function StartQuarterForm({ cycleId, cycleName, onClose, onSubmit }: StartQuarterFormProps) {
+export function StartQuarterForm({ cycleName, onClose, onSubmit }: StartQuarterFormProps) {
   const [formData, setFormData] = useState<StartQuarterFormData>({
     employeeName: '',
     department: '',

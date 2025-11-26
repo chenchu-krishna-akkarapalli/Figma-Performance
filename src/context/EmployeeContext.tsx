@@ -18,7 +18,7 @@ interface EmployeeContextType {
   setSelectedGoalId: (goalId: string | null) => void;
 }
 
-const EmployeeContext = createContext<EmployeeContextType | undefined>(undefined);
+export const EmployeeContext = createContext<EmployeeContextType | undefined>(undefined);
 
 export function EmployeeProvider({ children }: { children: ReactNode }) {
   const [employees, setEmployees] = useState<Employee[]>(employeeData.employees as Employee[]);

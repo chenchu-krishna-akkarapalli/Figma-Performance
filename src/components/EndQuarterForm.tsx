@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { FiSave, FiX } from 'react-icons/fi';
 
 interface EndQuarterFormProps {
-  cycleId: string;
   cycleName: string;
   onClose: () => void;
   onSubmit: (formData: EndQuarterFormData) => void;
@@ -22,7 +21,7 @@ export interface EndQuarterFormData {
   nextQuarterPriorities: string;
 }
 
-export function EndQuarterForm({ cycleId, cycleName, onClose, onSubmit }: EndQuarterFormProps) {
+export function EndQuarterForm({ cycleName, onClose, onSubmit }: EndQuarterFormProps) {
   const [formData, setFormData] = useState<EndQuarterFormData>({
     employeeName: '',
     department: '',
